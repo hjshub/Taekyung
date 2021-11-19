@@ -1,0 +1,839 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>태경농산</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="../js/gsap.min.js"></script>
+	<script src="../js/common.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../js/html5shiv.min.js"></script>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="../css/gnb.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<div id="legacy-IE">
+		<div class="info">
+		본 사이트는 Internet Explorer 10 기준(웹표준)으로 제작 된 사이트 입니다.
+		현재 고객님이 이용중인 브라우저는 곧 지원이 중단 됩니다.
+		<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">Internet Explorer 최신 버전</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">Chrome</a>과 같은 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+
+	<!--Skip Navigation-->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<div id="layout">
+		<!-- header S -->
+		<header class="inner">
+			<!-- PC GNB S -->
+			<div class="gnb-Web">
+				<span class="logo">
+					<a href="../index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				
+				<ul class="cateList">
+					<li>
+						<a href="\"><em>About</em></a>
+						<div class="depth2 sub01">
+							<span class="sub_title">About</span>
+							<ul class="cate">
+								<li><a href="\">Taekyung Nongsan</a></li>
+								<li><a href="\">History</a></li>
+								<li><a href="\">CI</a></li>
+								<li><a href="\">Business Area</a></li>
+								<li><a href="\">R&amp;D</a></li>
+								<li><a href="\">Company Sites</a></li>
+								<li><a href="\">Affiliates</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Business Solution</em></a>
+						<div class="depth2 sub02">
+							<span class="sub_title">Business Solution</span>
+							<ul class="cate">
+								<li><a href="\">Health Functional Food</a></li>
+								<li><a href="\">Functional Food Ingredients</a></li>
+								<li><a href="\">Extracts</a></li>
+								<li><a href="\">Powder &amp; Seasoning</a></li>
+								<li><a href="\">Dried Flake</a></li>
+								<li><a href="\">Sauces</a></li>
+								<li><a href="\">Flavored Oil</a></li>
+								<li><a href="\">HMR</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Brand</em></a>
+						<div class="depth2 sub03">
+							<span class="sub_title">Brand</span>
+							<ul class="cate">
+								<li><a href="\">O&rsquo; taste</a></li>
+								<li><a href="\">BORN TASTE</a></li>
+								<li><a href="\">Veggie Garden</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Customer Service</em></a>
+						<div class="depth2 sub04">
+							<span class="sub_title">Customer Service</span>
+							<ul class="cate">
+								<li><a href="\">FAQ</a></li>
+								<li><a href="\">Voice of Customers</a></li>
+							</ul>
+						</div>
+						<div class="depth2 product">
+							<div class="NewPrdSlider">
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product01.png" alt="주력제품01">
+									</div>
+									<span class="desc"><em>NEW</em><br/>Spicy Stewed Pork Ribs</span>
+								</div>
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product02.png" alt="주력제품02">
+									</div>
+									<span class="desc"><em>BRAND</em><br/>PLANT BASED</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<div class="gnb-bg"><em class="hidden_txt">gnb 백그라운드 영역</em></div>
+				</ul>
+				<div class="lang">
+					<span class="customSelect urlChange">
+						<label for="lang"><em class="hidden_txt">언어 선택</em></label>
+						<select id="lang">
+							<option value="en/index.html" selected>ENG</option>
+							<option value="index.html">KOR</option>
+						</select>
+					</span>
+				</div>
+			</div>
+			<!-- PC GNB E -->
+
+			<!-- Mobile GNB S -->
+			<div class="gnb-Mo">
+				<span class="logo">
+					<a href="index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				<span class="m_Menu_on">
+					<a href="#AllMenu" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 열기</em>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>	
+				</span>
+				<span class="m_Menu_off">
+					<a href="#close" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 닫기</em>
+						<span></span>
+						<span></span>
+					</a>
+				</span>
+				<div id="menuAll">
+					<em class="hidden_txt">모바일 전체메뉴</em>
+					<div class="m_cTx">
+						<span>
+							<a href="index.html">
+								<em class="hidden_txt">로고 이미지</em>
+							</a>
+						</span>
+						<ul class="m_cateList inner">
+							<li>
+								<a href="\">About</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">About</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Taekyung Nongsan</a></li>
+										<li><a href="\">History</a></li>
+										<li><a href="\">CI</a></li>
+										<li><a href="\">Business Area</a></li>
+										<li><a href="\">R&amp;D</a></li>
+										<li><a href="\">Company Sites</a></li>
+										<li><a href="\">Affiliates</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Business Solution</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Business Solution</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Health Functional Food</a></li>
+										<li><a href="\">Functional Food Ingredients</a></li>
+										<li><a href="\">Extracts</a></li>
+										<li><a href="\">Powder &amp; Seasoning</a></li>
+										<li><a href="\">Dried Flake</a></li>
+										<li><a href="\">Sauces</a></li>
+										<li><a href="\">Flavored Oil</a></li>
+										<li><a href="\">HMR</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Brand</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Brand</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">O&rsquo; taste</a></li>
+										<li><a href="\">BORN TASTE</a></li>
+										<li><a href="\">Veggie Garden</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Customer Service</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Customer Service</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">FAQ</a></li>
+										<li><a href="\">Voice of Customers</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="btn--type-xlg">
+							<a href="\">KOREAN</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile GNB E -->
+		</header>
+		<!-- // header E -->
+
+		<!-- wrapper S -->
+		<div id="wrapper" class="sub">
+			<div class="wrap">
+				<div class="container relation">
+					<!-- visual banner S-->
+					<div class="visual preview">
+						<div>
+							<em class="hidden_txt">관계회사 상단배너</em>
+							<div class="contents">
+								<div class="title">
+									<h2 class="animated ani-start-fadeUp ani-stop ani-delay-03">Affiliates</h2><br/>
+									<span class="animated ani-start-fadeUp ani-stop ani-delay-04"><em>A leap toward the global market,</em> <em>we stride toward the world.</em></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  // visual banner E-->
+
+					<!-- location S -->
+					<div class="location">
+						<ul>
+							<li><a href="\" title="Go Home"><em class="hidden_txt">Home</em></a></li>
+							<li><a href="\" title="Go About">About</a></li>
+							<li>
+								<span class="customSelect urlChange">
+									<label for="cate_2depth"><em class="hidden_txt">Category</em></label>
+									<select id="cate_2depth">
+										<option value="vision.html">Taekyung Nongsan</option>
+										<option value="history.html">History</option>
+										<option value="CI.html">CI</option>
+										<option value="business.html">Business Area</option>
+										<option value="rnd.html">R&amp;D</option>
+										<option value="workplace.html">Company Sites</option>
+										<option value="partnership.html" selected>Affiliates</option>
+									</select>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<!-- // location E -->
+
+					<!-- contents S-->
+					<div id="contents">
+						<div class="contents">
+							<!-- 관계회사 리스트 탭 메뉴 -->
+							<ul class="partner-list tab-menu inner" role="tablist" aria-label="partnerList">
+								<li>
+									<a href="#partner01" title="Nongshim Holdings" role="tab" aria-controls="partner01" aria-selected="false" id="tab-list01"><em>Nongshim<br/> Holdings</em></a>
+								</li>
+								<li>
+									<a href="#partner02" title="Nongshim" role="tab" aria-controls="partner02" aria-selected="false" id="tab-list02"><em>Nongshim</em></a>
+								</li>
+								<li>
+									<a href="#partner03" title="Youlchon Chemistry" role="tab" aria-controls="partner03" aria-selected="false" id="tab-list03"><em>Youlchon<br/> Chemistry</em></a>
+								</li>
+								<li>
+									<a href="#partner04" title="Mega Mart" role="tab" aria-controls="partner04" aria-selected="false" id="tab-list04"><em>Mega Mart</em></a>
+								</li>
+								<li>
+									<a href="#partner05" title="Nongshim Engineering" role="tab" aria-controls="partner05" aria-selected="false" id="tab-list05"><em>Nongshim<br/> Engineering</em></a>
+								</li>
+								<li>
+									<a href="#partner06" title="NDS" role="tab" aria-controls="partner06" aria-selected="false" id="tab-list06"><em>NDS<br/>(Nongshim Data System)</em></a>
+								</li>
+								<li>
+									<a href="#partner07" title="Nongshim Communication" role="tab" aria-controls="partner07" aria-selected="false" id="tab-list07"><em>Nongshim<br/> Communication</em></a>
+								</li>
+								<li>
+									<a href="#partner08" title="Hotel Nongshim" role="tab" aria-controls="partner08" aria-selected="false" id="tab-list08"><em>Hotel<br/> Nongshim</em></a>
+								</li>
+								<li>
+									<a href="#partner09" title="Nongshim Development Co." role="tab" aria-controls="partner09" aria-selected="false" id="tab-list09"><em>Nongshim<br/> Development Co.</em></a>
+								</li>
+								<li>
+									<a href="#partner10" title="Youlchon Foundation" role="tab" aria-controls="partner10" aria-selected="false" id="tab-list10"><em>Youlchon<br/> Foundation</em></a>
+								</li>
+							</ul>
+
+							<!--관계회사 리스트 mobile selectbox-->
+							<div class="tab-menu-mob">
+								<span class="customSelect">
+									<label for="partnerList"><em class="hidden_txt">Affiliates</em></label>
+									<select id="partnerList">
+										<option value="partner01">Nongshim Holdings</option>
+										<option value="partner02">Nongshim</option>
+										<option value="partner03">Youlchon Chemistry</option>
+										<option value="partner04">Mega Mart</option>
+										<option value="partner05">Nongshim Engineering</option>
+										<option value="partner06">NDS</option>
+										<option value="partner07">Nongshim Communication</option>
+										<option value="partner08">Hotel Nongshim</option>
+										<option value="partner09">Nongshim Development Co.</option>
+										<option value="partner10">Youlchon Foundation</option>
+									</select>
+								</span>
+							</div>
+
+							<!-- 농심홀딩스 -->
+							<div class="partner-list-item tab-contents" id="partner01" role="tabpanel" aria-labelledby="tab-list01">
+								<div class="partner_bnr">
+									<span>
+										<strong>Nongshim Holdings</strong><br/>
+										<em>We will dedicate our efforts and capabilities to<br/> ensure a robust business.</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Nongshim Holdings logo</em></span>
+										<a class="direct-link" href="http://www.nongshim.com/introduction/list_holdings_notice" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p class="subTitle">
+											Nongshim Holdings is a pure holding company established in July 1, 2003, to improve the management structure and efficiency of the Nongshim Group and to maximize the values for our shareholders by expanding the responsible management of the group.
+										</p>
+										<div class="info">
+											<dl>
+												<dt>1</dt>
+												<dd>Nongshim Holdings pledges to fulfill its role as the leader of Nongshim’s development strategies and policies in the 21st Century, and to guarantee the continued growth of the group.</dd>
+											</dl>
+											<dl>
+												<dt>2</dt>
+												<dd>We pledge to ensure the responsible and independent management of our affiliates and implement effective management evaluation to enhance the value of our investments.</dd>
+											</dl>
+											<dl>
+												<dt>3</dt>
+												<dd>We will continue to support our affiliates in focusing their capabilities and in creating maximum results in their business.</dd>
+											</dl>
+											<dl>
+												<dt>4</dt>
+												<dd>We will lead the company in the competitive international market of the 21st Century, creating investor value through superior competitiveness.</dd>
+											</dl>
+										</div>
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>7th floor, Nongshimgwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-7114</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-2-820-7828</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 농심 -->
+							<div class="partner-list-item tab-contents" id="partner02" role="tabpanel" aria-labelledby="tab-list02">
+								<div class="partner_bnr">
+									<span>
+										<strong>Nongshim</strong><br/>
+										<em>Korean Food Industry Leader, Nongshim</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Nongshim logo</em></span>
+										<a class="direct-link" href="http://www.nongshim.com/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											Nongshim is a food company specializing in the manufacturing and sale of instant noodles, snacks, and other items. Founded on September 18, 1965, it has established itself as the foremost food company of Korea, backed by the support and love of Korean people. As the world moves into the new millennium, Nongshim has branched out from its food business to engage its capabilities toward the new goal of becoming a service company creating a total living culture and values of health and joy for customers around the world.
+										</p>
+
+										<div class="desc">
+											<strong>Company Vision</strong><br/>
+											<span>
+												We will lead the industry to customer satisfaction through better products and services, and we will contribute toward a better life for our customers.
+											</span>
+										</div>
+
+										<div class="desc">
+											<strong>Corporate Vision</strong><br/>
+											<span class="color-red">An undisputed world leader in food and lifestyle service creation, bringing health and joy to humanity</span>
+											<span>
+												Since its founding, Nongshim has continued to direct considerable R&amp;D efforts and investments in its Institute of Science and Technology, creating products that have enhanced the common benefit of all and contributing to the development of Korean food and lifestyle culture. Even today, this effort is continued by nearly 100 hard-working expert researchers. This is evident in the long list of Nongshim products that have established their place as favorites of the Korean people: Shin Ramyun, Ansungtangmyun, Neoguri, Chapaghetti, Yukejang(Beef Bowl Noodle Soup), Shrimp Big Bowl, Shin Ramyun Big Bowl, Nongshim Udon Noodle Soup Bowl, Shrimp Crackers, Onion Rings, Sweet Potato Snack, Honey Twist Snack, Sumi Potato Chip, and many more.<br/> 
+												Nongshim has 5 production sites in Korea(Anyang, Anseong, Asan, Gumi, and Busan), producing instant noodles, snacks, cooked white rice, Capri-Sun, and other products.<br/> 
+												Nongshim&#39;s proactive responses to the rapidly changing market has allowed the company to seed the flavor of Korea through the Nongshim brand in 80 countries around the world as the first step toward becoming a global food giant, but despite this achievement, Nongshim still remains committed to its goals of enhancing the health of people through an R&amp;D system that is always one step ahead of the pack, scientific sales power, and state-of-the-art facilities.<br/> 
+												Under the goal of &ldquo;an undisputed world leader in food and lifestyle services,&rdquo; creating health and joy for humanity, Nongshim continues to grow and develop to become a more intelligent and global company.
+											</span>
+										</div>
+										
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-7114, +82-80-023-5181</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 율촌화학 -->
+							<div class="partner-list-item tab-contents" id="partner03" role="tabpanel" aria-labelledby="tab-list03">
+								<div class="partner_bnr">
+									<span>
+										<strong>Youlchon Chemistry</strong><br/>
+										<em>21st Century Leader in Packaging Culture, Youlchon Chemistry</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Youlchon Chemistry logo</em></span>
+										<a class="direct-link" href="http://www.youlchon.com/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											Packaging is the final step of manufacturing and the symbol of a product&#39;s uniqueness.<br/> Youlchon Chemistry produces packaging materials that make the products come alive and bring Nongshim&#39;s flavors to the customers in a safer, more hygienic way. As the leader in Korean packaging, Youlchon Chemistry has five massive production sites spread across Ansan, Pyeongtaek, and Yangsan. Its world-class, state-of-the-art factories maximize productivity with extremely fast production speeds, reaching 250m per minute, and uses advanced computerized multipurpose co-extrusion facilities to produce and supply highly consistent products in a timely manner.
+										</p>
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>15th floor, Nongshim Doyeongwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-8353</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-2-821-0956</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 메가마트 -->
+							<div class="partner-list-item tab-contents" id="partner04" role="tabpanel" aria-labelledby="tab-list04">
+								<div class="partner_bnr">
+									<span>
+										<strong>Mega Mart</strong><br/>
+										<em>Efficient Shopping in Comfortable Spaces, Mega Mart</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Mega Mart logo</em></span>
+										<a class="direct-link" href="http://www.megamart.com/jsp/Main.jsp" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p class="subTitle">
+											Mega Mart strives to supply fresh, quality items &ldquo;faster, more joyfully&rdquo; to its customers. Mega Mart offers better items at lowest prices in a convenient shopping space.
+										</p>
+										
+										<div class="contact">
+											<strong>Mega Mart</strong>
+											<dl>
+												<dt>Address</dt>
+												<dd>9th floor, Seongmugwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-8353</dd>
+											</dl>
+											<ul>
+												<li><a href="http://www.megamart.com/" target="_blank">Go to Online Mall</a></li>
+											</ul>
+										</div>
+
+										<div class="contact">
+											<strong>M Department Store</strong>
+											<dl>
+												<dt>Address</dt>
+												<dd>68-9, Geumgang-ro, Chuncheon-si, Gangwon-do, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-33-248-7000</dd>
+											</dl>
+											<ul>
+												<li><a href="http://www.mdepart.com/" target="_blank">Go to Home Page</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 농심엔지니어링 -->
+							<div class="partner-list-item tab-contents" id="partner05" role="tabpanel" aria-labelledby="tab-list05">
+								<div class="partner_bnr">
+									<span>
+										<strong>Nongshim Engineering</strong><br/>
+										<em>As a subsidiary of Nongshim, Nongshim Engineering was established as the world&#39;s<br/> only engineering company specializing in food engineering in 1997.</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Nongshim Engineering logo</em></span>
+										<a class="direct-link" href="http://www.nongshimeng.com/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											Nongshim Engineering is now a total engineering solutions provider expanding its scope from planning, design, manufacturing, installation, production, and management to encompass mechanical, electronic, construction, food, computer, and environmental engineering. Nongshim Engineering&#39;s greatest asset is the robust basis and teamwork, shaped by engineers with more than 30 years of experience. Its crowning achievement is the development and integration of the world’s first specialized computer integrated manufacturing(CIM) system for an instant noodle production line in 1993.
+										</p>
+
+										<div class="desc">
+											<strong>Factory Construction</strong><br/>
+											<span>Facilities design and feasibility review, layout study, master planning, technical services</span>
+										</div>
+
+										<div class="desc">
+											<strong>Food Production Facility Development and Sales</strong><br/>
+											<span>Instant Noodles: state-of-the-art operating system for packaged cup noodle production 
+											Snacks: Optimal budget facilities for frying and parching processes 
+											Soups: Freeze dryer(FD), continuous vacuum dryer(CVD), and automatic soup weighing systems</span>
+										</div>
+
+										<div class="desc">
+											<strong>Factory Automation(FA)</strong><br/>
+											<span>Automation systems for production and packaging lines</span>
+										</div>
+
+										<div class="desc">
+											<strong>Computer Integrated Manufacturing(CIM)</strong><br/>
+											<span>An integrated system of production facilities and computerized management with minimum investment and maximum returns</span>
+										</div>
+
+										<div class="desc">
+											<strong>Packaging Process</strong><br/>
+											<span>Robot auto-caser and palletizer equipment developed from Korean technologies for the complete automation of the packaging line</span>
+										</div>
+
+										<div class="desc">
+											<strong>Engineering Technology</strong><br/>
+											<span>Comprehensive consulting services that integrate software and hardware through high-end consultation facilities and unique technologies</span>
+										</div>
+										
+
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>14th floor, Nongshim Doyeongwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-7114</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-2-820-7999</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- NDS -->
+							<div class="partner-list-item tab-contents" id="partner06" role="tabpanel" aria-labelledby="tab-list06">
+								<div class="partner_bnr">
+									<span>
+										<strong>NDS</strong><br/>
+										<em>Opening the Future with State-of-the-Art Technology,<br/> the IT Partner for your Successful Business, NDS</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">NDS logo</em></span>
+										<a class="direct-link" href="http://nds.nongshim.co.kr/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											Established as a part of Nongshim&#39;s diversification efforts, NDS is the symbol of Nongshim Group&#39;s will to brave the frontiers of the Information Age. Presiding over the efficient management of Nongshim Group&#39;s internal data system, NDS also offers hardware and software development, information processing, communications, and consulting services as a part of its effort to construct the new information infrastructure befitting the future leader of the Information Age.
+										</p>
+										
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>11th and 12th floor, Nongshim Doyeongwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-827-2114</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-2-827-2119</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 농심기획 -->
+							<div class="partner-list-item tab-contents" id="partner07" role="tabpanel" aria-labelledby="tab-list07">
+								<div class="partner_bnr">
+									<span>
+										<strong>Nongshim Communication</strong><br/>
+										<em>Nongshim Communication Stands to Contribute to the<br/> Development of the Marketing Industry in the 21st Century</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Nongshim Communication logo</em></span>
+										<a class="direct-link" href="http://www.nscom.co.kr/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											Always one step ahead with its signature creativity, Nongshim&#39;s contribution to the Korean marketing industry and its 30 years of experience and know-how are now continued by the marketing agency Nongshim Communication. Nongshim Communication is a total marketing communication company lauded for its precise market research, consumer research, and analysis.
+										</p>
+										
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>2nd floor, Nongshimgwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-8900</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 호텔농심 -->
+							<div class="partner-list-item tab-contents" id="partner08" role="tabpanel" aria-labelledby="tab-list08">
+								<div class="partner_bnr">
+									<span>
+										<strong>Hotel Nongshim</strong><br/>
+										<em>Experience the Comfort of Hospitality and Tourism!<br/> A First-Grade Hotel of Distinction, Hotel Nongshim</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Hotel Nongshim logo</em></span>
+										<a class="direct-link" href="https://www.hotelnongshim.com/kr/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											The history of Hotel Nongshim began with the establishment of the &ldquo;Dongnae Tourist Hotel&rdquo;, the first modern facility for overnight lodging located south of Seoul&#39;s Han River. For about half a century since then, Hotel Nongshim has been providing comfortable and friendly hospitality services, earning the trust and affection of discerning customers from Korea and abroad. In August 2002, the renovated Dongnae Tourist Hotel was reopened with its present grand scale and status as Hotel Nongshim, a 240-room luxury hotel.
+										</p>
+										<div class="info">
+											<dl>
+												<dt>1</dt>
+												<dd>
+													<strong>Hurshimchung</strong><br/>
+													<span>
+														Hurshimchung urban health spa is an enjoyable space for relaxation and healthful rejuvenation. This enormous spa occupies 1,300 pyeong(4,300 m2) of land and can accommodate a total of 3,000 spa-goers. It houses about forty different baths including the longevity bath, hinoki wood bath, cave bath, and an open-air outdoor bath. There is also a variety of special event baths that use natural bath powders and seasonal oriental herbal medicine ingredients depending on the time of year. 
+													</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>2</dt>
+												<dd>
+													<strong>Central Location</strong><br/>
+													<span>
+														Hotel Nongshim&#39;s central location near tourist sites like Dongnae CC, Busan CC, Geumjeongsanseong Fortress, Beomeosa Temple, Geumgang Park, and Chungnyeolsa Shrine, as well as Yangsan Industrial Complex, Jeonggwan, Gimhae International Airport, and Busan Express Bus Terminal will make the hotel the best place to wind down for your tour of Busan or business travels alike.
+													</span>
+												</dd>
+											</dl>
+										</div>
+										
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>23, Geumganggongwon-ro 20beon-gil, Dongnae-gu, Busan, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-51-550-2100</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-51-550-2105</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 농심개발 -->
+							<div class="partner-list-item tab-contents" id="partner09" role="tabpanel" aria-labelledby="tab-list09">
+								<div class="partner_bnr">
+									<span>
+										<strong>Nongshim Development Co.</strong><br/>
+										<em>Situated in Perfect Harmony with Majestic Mountains and Lakes,<br/> Ildong Lakes Golf Club Promises the Best Services to our Guests</em>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Nongshim Development logo</em></span>
+										<a class="direct-link" href="http://www.ildonglakes.co.kr/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p>
+											We invite you into the perfect harmony of Unaksan Mountain&#39;s majesty and beautiful lakes. Ildong Lakes Golf Club is one of the foremost golf courses in Korea. Located in Yudong-ri, Ildong-myeon, Pocheon, Gyeonggi Province and operated by Nongshim Development Co., this place is an 18-hole golf course made up of the masculine Mountain Course and the feminine Hill Course. 
+											Golf experts consider its composition to be one of the most ideal courses. The club house offers superlative services with hot spring water drawn 800 m below ground and a restaurant operated by the expert staff of Sheraton Walker Hill Hotel. 
+											Its world-class golf course, excellent sevices, expert facility management, and competitive operation contributed to it being awarded with an international competition certificate from the US LPGA. Its next goal is to host an international men&#39;s golf competition to cement its position as the premier golf club of the world.
+										</p>
+										
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>738, Hwadong-ro, Ildong-myeon, Pocheon-si, Gyeonggi-do, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-31-539-5900</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-31-536-6810</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 율촌재단 -->
+							<div class="partner-list-item tab-contents" id="partner10" role="tabpanel" aria-labelledby="tab-list10">
+								<div class="partner_bnr">
+									<span>
+										<strong>Youlchon Foundation</strong>
+									</span>
+								</div>
+								<div class="partner_cts inner">
+									<div class="cont-left">
+										<span><em class="hidden_txt">Youlchon Foundation logo</em></span>
+										<a class="direct-link" href="http://www.youlchon.org/" target="_blank"><em>Go to Home Page</em></a>
+									</div>
+									<div class="cont-right">
+										<p class="subTitle">
+											In support to academic and cultural activities as well as to scholarship for the nurturing of human resources, Yulchon Foundation seeks to support the next hundred years through educational projects that seek to instill among adolescents the values of love and healthy passion.
+										</p>
+										<p>
+											Initially funded by the founder&#39;s personal fortune, the foundations for what would become the Youlchon Foundation were laid in 1978, when the foundation&#39;s basis was expanded to KRW 400 million to encompass university and graduate students.<br/> 
+											In 1984, Nongshim president Chun Ho Shin became the chair of the board and donated a fortune amounting to KRW 8 billion to the foundation, setting the stage for the foundation&#39;s growth to KRW 15.2 billion today. This act of generosity allowed the foundation to expand its scholarship programs to include academic research support, research organization support, publishing and distribution, and natural education support for adolescents.<br/> 
+											Youlchon Foundation successfully developed a Korean language textbook for all levels after 10 years of research. This textbook was then adapted for English and Japanese speakers in a CD-ROM format, providing valuable opportunity for local recipients of the KOREAN LAB website, children of the Korean diaspora, and Korean learners across the globe, giving them a chance to learn the Korean language and culture in an accessible format.<br/> 
+											We at Youlchon Foundation provide active support to youth natural education programs to guarantee that the future generation will grow up with a clear and bright consciousness and proper values.
+										</p>
+										<div class="contact">
+											<dl>
+												<dt>Address</dt>
+												<dd>2nd floor, Nongshimgwan, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</dd>
+											</dl>
+											<dl>
+												<dt>TEL</dt>
+												<dd>+82-2-820-8873</dd>
+											</dl>
+											<dl>
+												<dt>Fax</dt>
+												<dd>+82-2-827-2159</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- // #contents E -->
+				</div>
+			</div><!-- // container E-->
+		</div><!-- // wrap E-->
+		<!-- // wrapper E -->
+
+		<!-- footer S -->
+		<footer>
+			<div class="wrap">
+				<div class="container">
+					<span class="logo">
+						<a href="index.html">
+							<em class="hidden_txt">로고 이미지</em>
+						</a>
+					</span>
+					<div class="contents inner">
+						<address>
+							<ul>
+								<li>Nongshim Doyeongwan, 13th floor, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</li>
+								<li>TEL : 02 820 8700</li>
+								<li>FAX : 02 820 8796</li>
+							</ul>
+						</address>
+						<ul class="ft-sns-list">
+							<li><a href="\"><em class="hidden_txt">facebook</em><img src="../images/common/icon/ico_sns_facebook.png" alt="페이스북" /></a></li>
+							<li><a href="\"><em class="hidden_txt">instagram</em><img src="../images/common/icon/ico_sns_insta.png" alt="인스타그램" /></a></li>
+							<li><a href="\"><em class="hidden_txt">blog</em><img src="../images/common/icon/ico_sns_blog.png" alt="페이스북" /></a></li>
+						</ul>
+						<p class="copyright">COPYRIGHTS&copy; TAEKYUNGNONGSAN ALL RIGHT RESERVE</p>
+					</div>
+					<div class="familySite">
+						<span class="customSelect urlChange">
+							<label for="familysite"><em class="hidden_txt">계열사 바로가기</em></label>
+							<select id="familysite">
+								<option value="">FAMILY SITES</option>
+								<option value="http://www.nongshim.com/">Nongshim</option>
+								<option value="http://www.nongshim.com/introduction/list_holdings_notice">Nongshim Holdings</option>
+								<option value="http://www.megamart.com/jsp/Main.jsp">Mega Mart</option>
+								<option value="http://www.youlchon.com/">Youlchon Chemistry</option>
+								<option value="http://www.nongshimeng.com/">Nongshim Engineering</option>
+								<option value="http://nds.nongshim.co.kr/">NDS</option>
+								<option value="http://www.nscom.co.kr/">Nongshim Communication</option>
+								<option value="http://www.hotelnongshim.com/html/main/">Hotel Nongshim</option>
+								<option value="http://www.youlchon.org/">Youlchon Foundation</option>
+								<option value="http://www.ildonglakes.co.kr/">Nongshim Development Co.</option>
+							</select>
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer E -->
+	</div>
+</body>
+</html>	
+  

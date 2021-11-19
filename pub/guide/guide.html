@@ -1,0 +1,384 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>guide</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/guide.css">
+	</head>
+	<body>	
+		<div id="wrapper">
+			<h1>태경농산 퍼블리싱 가이드</h1>
+			<div class="guide_box" id="guide_box01">
+				<h2>layout</h2>
+				<div>
+					<div class="r lt01">
+						<span class="caption">div#layout</span>
+						<div class="r lt02"><span class="caption">header</span>Header Area</div>
+						<div class="r lt03">
+							<span class="caption">div#wrapper</span>
+							<div class="r lt04">
+							- Main Page : <span class="colored-orange">&lt;section class=&ldquo;section&rdquo;&gt;컨텐츠 영역&lt;&#x2F;div&gt;</span><br/>
+							- Sub Page : <span class="colored-orange">&lt;div id=&ldquo;contents&rdquo;&gt;컨텐츠 영역&lt;&#x2F;div&gt;</span>
+							</div>
+						</div>
+						<div class="r lt02"><span class="caption">footer</span>Footer Area</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box02">
+				<h2>css &amp; js</h2>
+				<div>
+					<ul class="inner">
+						<li>
+							<dl class="col-03">
+								<dt>CSS</dt>
+								<dd>
+									<strong>공통</strong><br/>
+									<em>base.css</em><br/>
+									<em>common.css</em><br/>
+									<em>font.css</em><br/>
+									<em>gnb.css</em><br/>
+									<em>jquery-ui.min.css</em>
+								</dd>
+								<dd>
+									<strong>Main page</strong><br/>
+									<em>main.css</em>
+								</dd>
+								<dd>
+									<strong>sub page</strong><br/>
+									<em>style.css</em>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="col-03">
+								<dt>JS</dt>
+								<dd>
+									<strong>공통</strong><br/>
+									<em>jquery-3.3.1.min.js</em><br/>
+									<em>jquery-ui.min.js</em><br/>
+									<em>slick.js</em><br/>
+									<em>gsap.min.js</em>
+								</dd>
+								<dd>
+									<strong>Main page</strong><br/>
+									<em>jquery.mousewheel.min.js</em><br/>
+									<em>imagesloaded.js</em><br/>
+									<em>swiper.min.js</em><br/>
+									<em>main.js</em>
+								</dd>
+								<dd>
+									<strong>sub page</strong><br/>
+									<em>common.js</em>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box03">
+				<h2>font</h2>
+				<div>
+					<div class="title">font-family : &lsquo;Noto Sans CJK KR&rsquo;</div>
+					<ul class="inner wide">
+						<li>
+							<dl class="tableLayout">
+								<dt>Thin - font-weight : 100</dt>
+								<dd class="ft-Thin">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>Light - font-weight : 300</dt>
+								<dd class="ft-Light">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>DemiLight - font-weight : 400</dt>
+								<dd class="ft-DemiLight">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>Regular - font-weight : 500</dt>
+								<dd class="ft-Regular">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>Medium - font-weight : 600</dt>
+								<dd class="ft-Medium">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>Bold - font-weight : 700</dt>
+								<dd class="ft-Bold">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="tableLayout">
+								<dt>Black - font-weight : 900</dt>
+								<dd class="ft-Black">가나다라마바사아자차카타파하 1234567890</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box04">
+				<h2>paging</h2>
+				<div>
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt>List(PC)</dt>
+								<dd style="text-align:center;width:100%;">
+									<div class="paging">
+										<span><a href="#" class="first"><em class="hidden_txt">맨 처음</em></a></span>
+										<span><a href="#" class="prev"><em class="hidden_txt">이전</em></a></span>
+										<ul>
+											<li class="selected"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">6</a></li>
+											<li><a href="#">7</a></li>
+											<li><a href="#">8</a></li>
+											<li><a href="#">9</a></li>
+											<li><a href="#">10</a></li>
+										</ul>
+										<span><a href="#" class="next"><em class="hidden_txt">다음</em></a></span>
+										<span><a href="#" class="last"><em class="hidden_txt">맨 뒤로</em></a></span>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>List(Mobile)</dt>
+								<dd style="text-align:center;width:100%;">
+									<div class="btnArea">
+										<button class="btn-Apply" type="submit">더보기</button>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+
+					<ul class="inner" style="margin-top:50px;">
+						<li>
+							<dl>
+								<dt>View(PC)</dt>
+								<dd style="width:100%;">
+									<div class="paging2">
+										<a href="\" class="prev">이전</a>
+										<a href="\" class="btn-list">목록</a>
+										<a href="\" class="next">다음</a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>View(Mobile)</dt>
+								<dd style="width:100%;">
+									<div class="paging2">
+										<a href="\" class="btn-list mob">목록</a>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box05">
+				<h2>button</h2>
+				<div style="background-color:#ddd;">
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt>Button Type01</dt>
+								<dd>
+									<span class="btn--type-xlg">
+										<a href="\" title="버튼-xlarge" tabindex="0">Button</a>
+									</span>
+									<span class="btn--type-lg" style="margin-left:30px;">
+										<a href="\" title="버튼-large" tabindex="0">Button</a>
+									</span>
+									<span class="btn--type-xs" style="margin-left:30px;">
+										<a href="\" title="버튼-small" tabindex="0">Button</a>
+									</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Button Type02</dt>
+								<dd>
+									<span class="btn--type-xlg" style="color:#fff;">
+										<a href="\" title="버튼-arrow" class="btn--dir"><em>Button</em></a>
+									</span>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<ul class="inner" style="margin-top:50px;">
+						<li>
+							<dl>
+								<dt>Button Type03</dt>
+								<dd>
+									<div class="btnArea">
+										<button type="submit" class="btn-Apply cs">Button</button>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Button Type04</dt>
+								<dd>
+									<div class="btnArea">
+										<button type="submit" class="btn-Apply submit">Button</button>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box06">
+				<h2>input</h2>
+				<div>
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt>Checkbox</dt>
+								<dd>
+									<span class="checkForm">
+										<input type="checkbox" id="aaa" checked="checked">
+										<label for="aaa">체크박스</label>
+									</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Radio button</dt>
+								<dd>
+									<span class="checkForm">
+										<input type="radio" id="bbb01" name="bbb" value="" checked="checked">
+										<label for="bbb01">라디오 버튼</label>
+									</span>
+									<span class="checkForm">
+										<input type="radio" id="bbb02" name="bbb" value="">
+										<label for="bbb02">라디오 버튼</label>
+									</span>
+									<span class="checkForm">
+										<input type="radio" id="bbb03" name="bbb" value="">
+										<label for="bbb03">라디오 버튼</label>
+									</span>
+									<span class="checkForm">
+										<input type="radio" id="bbb04" name="bbb" value="">
+										<label for="bbb04">라디오 버튼</label>
+									</span>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box07">
+				<h2>검색영역</h2>
+				<div>
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt>Type01</dt>
+								<dd>
+									<div class="Search">
+										<form id="searchForm" action="\" method="\">
+											<div class="searchWrap wide30">
+												<label for="ggg"><em class="hidden_txt">검색어를 입력하세요</em></label>
+												<input id="ggg" name="ggg" placeholder="검색어를 입력하세요" type="text" value="" autocomplete="0">
+											</div>
+											<button class="btn-search">검색</button>
+										</form>
+									</div>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Type02</dt>
+								<dd>
+									<div class="Search">
+										<form id="searchForm" action="\" method="\">
+											<div class="searchWrap wide40">
+												<label for="ggg"><em class="hidden_txt">검색어를 입력하세요</em></label>
+												<input id="ggg" name="ggg" placeholder="검색어를 입력하세요" type="text" value="" autocomplete="0">
+											</div>
+											<button class="btn-search">검색</button>
+										</form>
+									</div>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="guide_box" id="guide_box08">
+				<h2>select</h2>
+				<div>
+					<ul class="inner">
+						<li>
+							<dl>
+								<dt>Type01</dt>
+								<dd>
+									<span class="customSelect">
+										<label for="sss"><em class="hidden_txt">전체</em></label>
+										<select id="sss">
+											<option value="">선택1</option>
+											<option value="">선택2</option>
+											<option value="">선택3</option>
+											<option value="">선택4</option>
+											<option value="">선택5</option>
+										</select>
+									</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>Type02</dt>
+								<dd>
+									<span class="customSelect select2">
+										<label for="sss"><em class="hidden_txt">전체</em></label>
+										<select id="sss">
+											<option value="">선택1</option>
+											<option value="">선택2</option>
+											<option value="">선택3</option>
+											<option value="">선택4</option>
+											<option value="">선택5</option>
+										</select>
+									</span>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>	
+	  	

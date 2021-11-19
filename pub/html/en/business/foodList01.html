@@ -1,0 +1,590 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Taekyung Nongsan</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="../js/gsap.min.js"></script>
+	<script src="../js/common.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../js/html5shiv.min.js"></script>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="../css/gnb.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<div id="legacy-IE">
+		<div class="info">
+		본 사이트는 Internet Explorer 10 기준(웹표준)으로 제작 된 사이트 입니다.
+		현재 고객님이 이용중인 브라우저는 곧 지원이 중단 됩니다.
+		<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">Internet Explorer 최신 버전</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">Chrome</a>과 같은 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+
+	<!--Skip Navigation-->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<div id="layout">
+		<!-- header S -->
+		<header class="inner">
+			<!-- PC GNB S -->
+			<div class="gnb-Web">
+				<span class="logo">
+					<a href="../index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				
+				<ul class="cateList">
+					<li>
+						<a href="\"><em>About</em></a>
+						<div class="depth2 sub01">
+							<span class="sub_title">About</span>
+							<ul class="cate">
+								<li><a href="\">Taekyung Nongsan</a></li>
+								<li><a href="\">History</a></li>
+								<li><a href="\">CI</a></li>
+								<li><a href="\">Business Area</a></li>
+								<li><a href="\">R&amp;D</a></li>
+								<li><a href="\">Company Sites</a></li>
+								<li><a href="\">Affiliates</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Business Solution</em></a>
+						<div class="depth2 sub02">
+							<span class="sub_title">Business Solution</span>
+							<ul class="cate">
+								<li><a href="\">Health Functional Food</a></li>
+								<li><a href="\">Functional Food Ingredients</a></li>
+								<li><a href="\">Extracts</a></li>
+								<li><a href="\">Powder &amp; Seasoning</a></li>
+								<li><a href="\">Dried Flake</a></li>
+								<li><a href="\">Sauces</a></li>
+								<li><a href="\">Flavored Oil</a></li>
+								<li><a href="\">HMR</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Brand</em></a>
+						<div class="depth2 sub03">
+							<span class="sub_title">Brand</span>
+							<ul class="cate">
+								<li><a href="\">O&rsquo; taste</a></li>
+								<li><a href="\">BORN TASTE</a></li>
+								<li><a href="\">Veggie Garden</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Customer Service</em></a>
+						<div class="depth2 sub04">
+							<span class="sub_title">Customer Service</span>
+							<ul class="cate">
+								<li><a href="\">FAQ</a></li>
+								<li><a href="\">Voice of Customers</a></li>
+							</ul>
+						</div>
+						<div class="depth2 product">
+							<div class="NewPrdSlider">
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product01.png" alt="주력제품01">
+									</div>
+									<span class="desc"><em>NEW</em><br/>Spicy Stewed Pork Ribs</span>
+								</div>
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product02.png" alt="주력제품02">
+									</div>
+									<span class="desc"><em>BRAND</em><br/>PLANT BASED</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<div class="gnb-bg"><em class="hidden_txt">gnb 백그라운드 영역</em></div>
+				</ul>
+				<div class="lang">
+					<span class="customSelect urlChange">
+						<label for="lang"><em class="hidden_txt">언어 선택</em></label>
+						<select id="lang">
+							<option value="en/index.html" selected>ENG</option>
+							<option value="index.html">KOR</option>
+						</select>
+					</span>
+				</div>
+			</div>
+			<!-- PC GNB E -->
+
+			<!-- Mobile GNB S -->
+			<div class="gnb-Mo">
+				<span class="logo">
+					<a href="index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				<span class="m_Menu_on">
+					<a href="#AllMenu" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 열기</em>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>	
+				</span>
+				<span class="m_Menu_off">
+					<a href="#close" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 닫기</em>
+						<span></span>
+						<span></span>
+					</a>
+				</span>
+				<div id="menuAll">
+					<em class="hidden_txt">모바일 전체메뉴</em>
+					<div class="m_cTx">
+						<span>
+							<a href="index.html">
+								<em class="hidden_txt">로고 이미지</em>
+							</a>
+						</span>
+						<ul class="m_cateList inner">
+							<li>
+								<a href="\">About</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">About</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Taekyung Nongsan</a></li>
+										<li><a href="\">History</a></li>
+										<li><a href="\">CI</a></li>
+										<li><a href="\">Business Area</a></li>
+										<li><a href="\">R&amp;D</a></li>
+										<li><a href="\">Company Sites</a></li>
+										<li><a href="\">Affiliates</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Business Solution</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Business Solution</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Health Functional Food</a></li>
+										<li><a href="\">Functional Food Ingredients</a></li>
+										<li><a href="\">Extracts</a></li>
+										<li><a href="\">Powder &amp; Seasoning</a></li>
+										<li><a href="\">Dried Flake</a></li>
+										<li><a href="\">Sauces</a></li>
+										<li><a href="\">Flavored Oil</a></li>
+										<li><a href="\">HMR</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Brand</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Brand</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">O&rsquo; taste</a></li>
+										<li><a href="\">BORN TASTE</a></li>
+										<li><a href="\">Veggie Garden</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Customer Service</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Customer Service</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">FAQ</a></li>
+										<li><a href="\">Voice of Customers</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="btn--type-xlg">
+							<a href="\">KOREAN</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile GNB E -->
+		</header>
+		<!-- // header E -->
+
+		<!-- wrapper S -->
+		<div id="wrapper" class="sub">
+			<div class="wrap">
+				<div class="container bs_solution">
+					<!-- visual banner S-->
+					<div class="visual preview">
+						<div>
+							<em class="hidden_txt">비즈니스 솔루션 상단배너</em>
+							<div class="contents">
+								<div class="title">
+									<h2 class="animated ani-start-fadeUp ani-stop ani-delay-03">Business Solution</h2><br/>
+									<span class="animated ani-start-fadeUp ani-stop ani-delay-04"><em>We offer business solutions customized</em> <em>to the success of our clients.</em></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  // visual banner E-->
+
+					<!-- location S -->
+					<div class="location">
+						<ul>
+							<li><a href="\" title="Go Home"><em class="hidden_txt">Home</em></a></li>
+							<li><a href="\" title="Go Business Solution">Business Solution</a></li>
+							<li>
+								<span class="customSelect urlChange">
+									<label for="cate_2depth"><em class="hidden_txt">Category</em></label>
+									<select id="cate_2depth">
+										<option value="\" selected>Health Functional Food</option>
+										<option value="\">Functional Food Ingredients</option>
+										<option value="\">Extracts</option>
+										<option value="\">Powder &amp; Seasoning</option>
+										<option value="\">Dried Flake</option>
+										<option value="\">Sauces</option>
+										<option value="\">Flavored Oil</option>
+										<option value="\">Home Meal Replacement</option>
+									</select>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<!-- // location E -->
+
+					<!-- contents S-->
+					<div id="contents">
+						<div class="contents wide">
+							<h3 class="subTitle preview">
+								<p class="animated ani-start-fadeUp20 ani-stop ani-delay-05"><span class="f_bd">Health<br/> Functional Food</span></p>
+								<p class="animated ani-start-fadeUp20 ani-stop ani-delay-06"><b>Enriching lives through</b><br/> <b>health functional food</b></p>
+							</h3>
+							<div class="bs_sub_Top view">
+								<ul class="inner">
+									<li><img src="../images/sub/business/bs_bnr_01_01.jpg" alt="건강기능식 배너 이미지01"></li>
+									<li>
+										<div class="desc">
+											<div class="info01">
+												We develop health functional food through our Good
+												Manufacturing Practice (GMP) certified facilities and 
+												systems to provide solutions toward healthier lifestyles.
+											</div>
+											<div class="info02">
+												<span><img src="../images/sub/business/bs_bnr_cert01.png" alt="GMP 인증"></span>
+												<span><img src="../images/sub/business/bs_bnr_cert02.png" alt="건강기능식품 인증"></span>
+												<span><img src="../images/sub/business/bs_bnr_cert03.png" alt="KHSA 인증"></span>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="light_03_1 animated ani-start-fadeRight ani-stop ani-delay-04"><em class="hidden_txt">백그라운드 영역01</em></div>
+								<div class="light_05 animated ani-start-fadeRight ani-stop ani-delay-05"><em class="hidden_txt">백그라운드 영역02</em></div>
+							</div>
+						</div>
+						<div class="contents bs_sub_Conts list01">
+							<div class="cont-right">
+								<ul class="inner">
+									<li><img src="../images/sub/business/bs_bnr_01_02.jpg" alt="건강기능식 배너 이미지02"></li>
+									<li>
+										<dl class="cts_step01">
+											<dt><span class="f_bd">Micro Molecule Collagen Peptide NS</span></dt>
+											<dd>
+												<p>
+													The first fish-derived functional collagen material developed purely with Korean technology is certified 
+													as a health functional food by the Ministry of Food and Drug Safety(MFDS).<br/> 
+													It helps keep the skin healthy and protects the skin from ultraviolet(UV) rays.
+												</p>
+												<div>
+													<img src="../images/sub/business/bs_bnr_01_03.png" alt="건강기능식 배너 이미지03">
+													<span class="hidden_txt">Health Functional Food - Ministry of Food and Drug Safety, Fish Collagen, Micro Molecular Collagen</span>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+
+							<div class="cont-half">
+								<ul class="inner">
+									<li>
+										<div>
+											<span>
+												<strong class="color-red f_bd">The First to Be</strong><br/>
+												<em>Made by Korean Technology</em>
+											</span>
+											<span><b>The MFDS-certified functional collagen is the first to be developed using Korean technology.</b></span>
+										</div>
+										<hr>
+										<div>
+											<span>
+												<strong class="color-red f_bd">Gly-pro</strong><br/>
+												<em>Same Structure with Skin Cells</em>
+											</span>
+											<span><b>Being identical to the structure of human skin cells allows it to be delivered directly to the skin.</b></span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<span>
+												<strong class="color-red f_bd">173 Da</strong><br/>
+												<em>Smallest Molecular Mass</em>
+											</span>
+											<span><b>It has the smallest molecular mass among collagen materials in Korea at 173 Da (dalton) (in 2020).</b></span>
+											<span>
+												<img src="../images/sub/business/bs_bnr_01_04.png" alt="건강기능식 배너 이미지04">
+												<em class="hidden_txt">
+													Macro Molecular Weight Collagen - Low absorption rate and function &gt; Taekyung Nongsan’s Micro Molecular Collagen - High absorption rate and function
+												</em>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="cont-ct-type01">
+								<dl>
+									<dt><b class="f_bd">Clinical Trials</b> Results</dt>
+									<dd>
+										<ul class="inner">
+											<li>
+												<em>Week 4</em>
+												<div class="bs_c_t_step01"><span>Moisturizing</span></div>
+												<div class="bs_c_t_step02"><span>Exfoliating</span></div>
+											</li>
+											<li>
+												<em>Week 8</em>
+												<div class="bs_c_t_step03"><span>Improving<br/> skin firmness</span></div>
+											</li>
+											<li>
+												<em>Week 12</em>
+												<div class="bs_c_t_step04"><span>Reducing<br/> eye wrinkles</span></div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<div class="subject">
+									<ul>
+										<li><em>*</em><span class="first" style="width:115px;">Testing agency:</span><span>COREDERM Inc. (12-week testing for 112 males and females aged 25–60)</span></li>
+										<li><em>*</em><span>Clinical trial results might not be applicable to all.</span></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="cont-left">
+								<ul class="inner">
+									<li><img src="../images/sub/business/bs_bnr_01_06.jpg" alt="건강기능식 배너 이미지04"></li>
+									<li>
+										<dl class="cts_step02">
+											<dt><span class="f_bd">Black Soybean (Rhynchosiavolubilis Lour) Peptide</span></dt>
+											<dd>
+												<p>
+													This material was made through extraction and enzyme processing of Korean black soybeans
+													(Rhynchosia volubilis Lour) and is certified as a health functional food 
+													by the Ministry of Food and Drug Safety(MFDS).<br/> 
+													Its highly functional peptide content makes it potentially effective 
+													for the treatment of hypertension, control of blood sugar levels, and reduction of body fat.
+												</p>
+												<div>
+													<img src="../images/sub/business/bs_bnr_01_05.png" alt="건강기능식 배너 이미지05">
+													<span class="hidden_txt">Health Functional Food - Ministry of Food and Drug Safety, Korean Black Soybean, Cutting-edge Enzyme Processing</span>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="cont-ct-type02">
+								<dl>
+									<dt><b class="f_bd">Clinical Trials</b> Results</dt>
+									<dd>
+										<ul class="inner">
+											<li>
+												<img class="img-web" src="../images/sub/business/bs_01_c_t2_step01.png" alt="펩타이드 섭취후 변화 01 - pc">
+												<img class="img-mob" src="../images/sub/business/bs_01_c_t2_step01_mob.png" alt="펩타이드 섭취후 변화 01 - 모바일">
+												<em class="hidden_txt">[Blood Sugar Level Reduction] - Changes after 12 Weeks of Peptide Consumption : Blood Sugar Levels 30 Min after Eating(17mg/Dl), Total Blood Sugar(27mg/Dl)</em>
+											</li>
+											<li>
+												<img class="img-web" src="../images/sub/business/bs_01_c_t2_step02.png" alt="펩타이드 섭취후 변화 02 - pc">
+												<img class="img-mob" src="../images/sub/business/bs_01_c_t2_step02_mob.png" alt="펩타이드 섭취후 변화 02 - 모바일">
+												<em class="hidden_txt">[Body Fat Level Reduction] - Changes after 12 Weeks of Peptide Consumption : Body Fat(0.77kg), Body Weigh(1.03kg)</em>
+											</li>
+											<li>
+												<img class="img-web" src="../images/sub/business/bs_01_c_t2_step03.png" alt="펩타이드 섭취후 변화 03 - pc">
+												<img class="img-mob" src="../images/sub/business/bs_01_c_t2_step03_mob.png" alt="펩타이드 섭취후 변화 03 - 모바일">
+												<em class="hidden_txt">
+												[Blood Pressure Reduction]
+												Changes after Peptide Consumption(week 4): Systolic Pressure 7mmHg, Diastolic Pressure 4mmHg, Pulse Pressure 2mmHg
+												Changes after Peptide Consumption(week 8): Systolic Pressure 10mmHg, Diastolic Pressure 5mmHg, Pulse Pressure 4mmHg
+												</em>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<div class="subject">
+									<ul>
+										<li><em>*</em><span class="first" style="width:52px;">Source:</span><span>Clinical Trial Result Report(November 2011, Professor Jong-ho Lee, Yonsei University), 
+										Food &amp; Function (2012)&#x2F;Academic Journal,<br/> &ldquo;Food and Function&lsquo;, Hypertension Research(2013), 1–7&#x2F;Academic 
+										Journal, &ldquo;Hypertension Research&rdquo;</span></li>
+										<li><em>*</em><span>Clinical trial results might not be applicable to all.</span></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="cont-right">
+								<ul class="inner">
+									<li><img src="../images/sub/business/bs_bnr_01_07.jpg" alt="건강기능식 배너 이미지06"></li>
+									<li>
+										<dl class="cts_step03">
+											<dt><span class="f_bd">Fermented Kelp Extract</span></dt>
+											<dd>
+												<p>
+													This material was made by forming GABA with Korean kelp 
+													through a high-end fermentation process and is certified 
+													as a health functional food by the Ministry of Food and Drug Safety(MFDS).<br/> 
+													It can potentially help protect the liver 
+													from alcohol-induced damages and improve memory.
+												</p>
+												<div>
+													<img src="../images/sub/business/bs_bnr_01_08.png" alt="건강기능식 배너 이미지07">
+													<span class="hidden_txt">Health Functional Food - Ministry of Food and Drug Safety, Korean Kelp, utting-edge Fermentation Technology</span>
+												</div>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+
+							<div class="cont-half cont01">
+								<ul class="inner">
+									<li>
+										<div>
+											<span><strong class="color-red f_bd">Improves Liver<br/> Function</strong></span>
+											<span><b>Can help prevent alcohol damage in liver, improve liver function, and mitigate hangovers</b></span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<span><strong class="color-red f_bd">Improves<br/> Memory</strong></span>
+											<span><b>Can help improve memory through GABA materials formed from kelp</b></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="cont-ct-type03">
+								<dl>
+									<dt><b class="f_bd">Clinical Trials</b> Results</dt>
+									<dd>
+										<ul class="inner">
+											<li>
+												<div class="bs_c_t_step01"><span>Protects liver from<br/> alcohol-induced damage</span></div>
+												<div><em>Decreases liver damage indicators, such as GGT, AST, ALT, BUN levels</em></div>
+											</li>
+											<li>
+												<div class="bs_c_t_step02"><span>Increases antioxidant<br/> enzyme levels</span></div>
+												<div><em>Increases antioxidant enzymes in blood, such as SOD, CAT, GPx, GSR</em></div>
+											</li>
+											<li>
+												<div class="bs_c_t_step03"><span>ncreases brain-<br/>derived neurotrophic<br/>factor (BDNF)</span></div>
+												<div><em>Increases BDNF levels, which promote brain neuron growth, formation of neural circuit, and memory</em></div>
+											</li>
+											<li>
+												<div class="bs_c_t_step04"><span>Improves<br/> memory</span></div>
+												<div><em>Induces a positive effect on general cognitive functions, language and general intelligence, sensory memory, and  orking memory</em></div>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+								<div class="subject">
+									<ul>
+										<li>
+											<em>*</em><span class="first" style="width:52px;">Source:</span>
+											<span>
+											Clinical Trial Result Report(July 2011, Jung-il Kim, Dong-A University Hospital Faculty of Occupational Medicine)<br/> Clinical Trial Result Report (2016, Je-kwang Ryu, Seoul National University Institute for Cognitive Science)<br/> Clinical Trial Result Report(June 2017, Je-kwang Ryu, Seoul National University Institute for Cognitive Science)
+											</span>
+										</li>
+										<li><em>*</em><span>Clinical trial results might not be applicable to all.</span></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- // #contents E -->
+				</div>
+			</div><!-- // container E-->
+		</div><!-- // wrap E-->
+		<!-- // wrapper E -->
+
+		<!-- footer S -->
+		<footer>
+			<div class="wrap">
+				<div class="container">
+					<span class="logo">
+						<a href="index.html">
+							<em class="hidden_txt">로고 이미지</em>
+						</a>
+					</span>
+					<div class="contents inner">
+						<address>
+							<ul>
+								<li>Nongshim Doyeongwan, 13th floor, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</li>
+								<li>TEL : 02 820 8700</li>
+								<li>FAX : 02 820 8796</li>
+							</ul>
+						</address>
+						<ul class="ft-sns-list">
+							<li><a href="\"><em class="hidden_txt">facebook</em><img src="../images/common/icon/ico_sns_facebook.png" alt="페이스북" /></a></li>
+							<li><a href="\"><em class="hidden_txt">instagram</em><img src="../images/common/icon/ico_sns_insta.png" alt="인스타그램" /></a></li>
+							<li><a href="\"><em class="hidden_txt">blog</em><img src="../images/common/icon/ico_sns_blog.png" alt="페이스북" /></a></li>
+						</ul>
+						<p class="copyright">COPYRIGHTS&copy; TAEKYUNGNONGSAN ALL RIGHT RESERVE</p>
+					</div>
+					<div class="familySite">
+						<span class="customSelect urlChange">
+							<label for="familysite"><em class="hidden_txt">계열사 바로가기</em></label>
+							<select id="familysite">
+								<option value="">FAMILY SITES</option>
+								<option value="http://www.nongshim.com/">Nongshim</option>
+								<option value="http://www.nongshim.com/introduction/list_holdings_notice">Nongshim Holdings</option>
+								<option value="http://www.megamart.com/jsp/Main.jsp">Mega Mart</option>
+								<option value="http://www.youlchon.com/">Youlchon Chemistry</option>
+								<option value="http://www.nongshimeng.com/">Nongshim Engineering</option>
+								<option value="http://nds.nongshim.co.kr/">NDS</option>
+								<option value="http://www.nscom.co.kr/">Nongshim Communication</option>
+								<option value="http://www.hotelnongshim.com/html/main/">Hotel Nongshim</option>
+								<option value="http://www.youlchon.org/">Youlchon Foundation</option>
+								<option value="http://www.ildonglakes.co.kr/">Nongshim Development Co.</option>
+							</select>
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer E -->
+	</div>
+</body>
+</html>	
+  

@@ -1,0 +1,542 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>태경농산</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="../js/gsap.min.js"></script>
+	<script src="../js/common.js"></script>
+	<!--[if lt IE 9]>
+	<script src="../js/html5shiv.min.js"></script>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="../css/gnb.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css">
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<div id="legacy-IE">
+		<div class="info">
+		본 사이트는 Internet Explorer 10 기준(웹표준)으로 제작 된 사이트 입니다.
+		현재 고객님이 이용중인 브라우저는 곧 지원이 중단 됩니다.
+		<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">Internet Explorer 최신 버전</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">Chrome</a>과 같은 최신 브라우저를 이용해 주세요.
+		</div>
+	</div>
+	<![endif]-->
+
+	<!--Skip Navigation-->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<div id="layout">
+		<!-- header S -->
+		<header class="inner">
+			<!-- PC GNB S -->
+			<div class="gnb-Web">
+				<span class="logo">
+					<a href="../index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				
+				<ul class="cateList">
+					<li>
+						<a href="\"><em>About</em></a>
+						<div class="depth2 sub01">
+							<span class="sub_title">About</span>
+							<ul class="cate">
+								<li><a href="\">Taekyung Nongsan</a></li>
+								<li><a href="\">History</a></li>
+								<li><a href="\">CI</a></li>
+								<li><a href="\">Business Area</a></li>
+								<li><a href="\">R&amp;D</a></li>
+								<li><a href="\">Company Sites</a></li>
+								<li><a href="\">Affiliates</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Business Solution</em></a>
+						<div class="depth2 sub02">
+							<span class="sub_title">Business Solution</span>
+							<ul class="cate">
+								<li><a href="\">Health Functional Food</a></li>
+								<li><a href="\">Functional Food Ingredients</a></li>
+								<li><a href="\">Extracts</a></li>
+								<li><a href="\">Powder &amp; Seasoning</a></li>
+								<li><a href="\">Dried Flake</a></li>
+								<li><a href="\">Sauces</a></li>
+								<li><a href="\">Flavored Oil</a></li>
+								<li><a href="\">HMR</a></li>	
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Brand</em></a>
+						<div class="depth2 sub03">
+							<span class="sub_title">Brand</span>
+							<ul class="cate">
+								<li><a href="\">O&rsquo; taste</a></li>
+								<li><a href="\">BORN TASTE</a></li>
+								<li><a href="\">Veggie Garden</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="\"><em>Customer Service</em></a>
+						<div class="depth2 sub04">
+							<span class="sub_title">Customer Service</span>
+							<ul class="cate">
+								<li><a href="\">FAQ</a></li>
+								<li><a href="\">Voice of Customers</a></li>
+							</ul>
+						</div>
+						<div class="depth2 product">
+							<div class="NewPrdSlider">
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product01.png" alt="주력제품01">
+									</div>
+									<span class="desc"><em>NEW</em><br/>Spicy Stewed Pork Ribs</span>
+								</div>
+								<div class="item">
+									<div class="img">
+										<img src="../images/common/brand_slide_product02.png" alt="주력제품02">
+									</div>
+									<span class="desc"><em>BRAND</em><br/>PLANT BASED</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<div class="gnb-bg"><em class="hidden_txt">gnb 백그라운드 영역</em></div>
+				</ul>
+				<div class="lang">
+					<span class="customSelect urlChange">
+						<label for="lang"><em class="hidden_txt">언어 선택</em></label>
+						<select id="lang">
+							<option value="en/index.html" selected>ENG</option>
+							<option value="index.html">KOR</option>
+						</select>
+					</span>
+				</div>
+			</div>
+			<!-- PC GNB E -->
+
+			<!-- Mobile GNB S -->
+			<div class="gnb-Mo">
+				<span class="logo">
+					<a href="index.html">
+						<em class="hidden_txt">로고 이미지</em>
+					</a>
+				</span>
+				<span class="m_Menu_on">
+					<a href="#AllMenu" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 열기</em>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>	
+				</span>
+				<span class="m_Menu_off">
+					<a href="#close" class="m_Menu_sw">
+						<em class="hidden_txt">모바일 전체메뉴 닫기</em>
+						<span></span>
+						<span></span>
+					</a>
+				</span>
+				<div id="menuAll">
+					<em class="hidden_txt">모바일 전체메뉴</em>
+					<div class="m_cTx">
+						<span>
+							<a href="index.html">
+								<em class="hidden_txt">로고 이미지</em>
+							</a>
+						</span>
+						<ul class="m_cateList inner">
+							<li>
+								<a href="\">About</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">About</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Taekyung Nongsan</a></li>
+										<li><a href="\">History</a></li>
+										<li><a href="\">CI</a></li>
+										<li><a href="\">Business Area</a></li>
+										<li><a href="\">R&amp;D</a></li>
+										<li><a href="\">Company Sites</a></li>
+										<li><a href="\">Affiliates</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Business Solution</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Business Solution</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">Health Functional Food</a></li>
+										<li><a href="\">Functional Food Ingredients</a></li>
+										<li><a href="\">Extracts</a></li>
+										<li><a href="\">Powder &amp; Seasoning</a></li>
+										<li><a href="\">Dried Flake</a></li>
+										<li><a href="\">Sauces</a></li>
+										<li><a href="\">Flavored Oil</a></li>
+										<li><a href="\">HMR</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Brand</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Brand</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">O&rsquo; taste</a></li>
+										<li><a href="\">BORN TASTE</a></li>
+										<li><a href="\">Veggie Garden</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="\">Customer Service</a>
+								<button type="button"><em class="hidden_txt">서브메뉴 더보기</em></button>
+								<div>
+									<span class="hidden_txt">Customer Service</span>
+									<ul class="m_depth2 inner">
+										<li><a href="\">FAQ</a></li>
+										<li><a href="\">Voice of Customers</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="btn--type-xlg">
+							<a href="\">KOREAN</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile GNB E -->
+		</header>
+		<!-- // header E -->
+
+		<!-- wrapper S -->
+		<div id="wrapper" class="sub">
+			<div class="wrap">
+				<div class="container brand">
+					<!-- visual banner S-->
+					<div class="visual preview">
+						<h2 class="hidden_txt">O&rsquo;taste</h2>
+						<div>
+							<em class="hidden_txt">브랜드 상단배너</em>
+							<img class="img-web" src="../images/sub/bg_top_brand01.png" alt="브랜드 상단배너 pc" />
+							<img class="img-mob" src="../images/sub/bg_top_brand01_mob.png" alt="브랜드 상단배너 mobile" />
+							<div class="contents">
+								<div class="title">
+									<strong class="animated ani-start-fadeUp ani-stop ani-delay-03">O&rsquo;taste is Taekyung Nongsan’s B2C brand,<br/> delivering joy and satisfaction to our customers.</strong><br/>
+									<span class="animated ani-start-fadeUp ani-stop ani-delay-04"><em>O’ taste products capture the benefits of our carefully selected<br/> ingredients to surprise the diner with great taste.</em></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--  // visual banner E-->
+
+					<!-- location S -->
+					<div class="location">
+						<ul>
+							<li><a href="\" title="Go Home"><em class="hidden_txt">Home</em></a></li>
+							<li><a href="\" title="Go Brand">Brand</a></li>
+							<li>
+								<span class="customSelect urlChange">
+									<label for="cate_2depth"><em class="hidden_txt">Category</em></label>
+									<select id="cate_2depth">
+										<option value="\" selected>O&rsquo;taste</option>
+										<option value="\">BORN TASTE</option>
+										<option value="\">Veggie Garden</option>
+									</select>
+								</span>
+							</li>
+							<li>
+								<span class="customSelect urlChange">
+									<label for="cate_3depth"><em class="hidden_txt">Category</em></label>
+									<select id="cate_3depth">
+										<option value="\">Category</option>
+										<option value="\">Soy Sauce Topokki</option>
+										<option value="\">Hot Topokki</option>
+										<option value="\">Jajang Topokki</option>
+										<option value="\">Spicy BraisedChicken in Soy Sauce</option>
+										<option value="\">Pork Backbone Soup with Dried Cabbage</option>
+										<option value="\">Stir-Fried Pork Belly&amp;Sausage with Mala Sauce</option>
+										<option value="\">Charcoal Roasted Pork Barbecue</option>
+										<option value="\">Spicy Stewed Pork Ribs</option>
+									</select>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<!-- // location E -->
+
+					<!-- contents S-->
+					<div id="contents">
+						<div class="contents">
+							<div class="brand-list preview">
+								<div class="sub-title">
+									<span class="animated ani-start-fadeUp ani-stop ani-delay-05">We recreate the joy and care of our mother&#39;s table<br/> using high-quality source ingredients. </span>
+								</div>
+								
+								<!--200710 브랜드 리스트 상단 추가 오테이스트-->
+								<div class="brand-slogan otaste">
+									<ul class="animated ani-start-fadeUp ani-stop ani-delay-06">
+										<li>
+											<div>
+												<span class="info"><b>Good Ingredients, Best taste<br/> O&rsquo;taste</b></span>
+												<span class="desc"><em>Based on good ingredients that are the basis of taste, We Delivers the best taste Based on good ingredients that are the basis of taste</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>a desire to give only good things<br/> O&rsquo;taste</b></span>
+												<span class="desc"><em>We provide reliable food through strict quality control</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>My joyful brand,<br/> O&rsquo;taste</b></span>
+												<span class="desc"><em>Like the warmth of a home-cooked meal, We express our sincere heart and soul.</em></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<!--200710 브랜드 리스트 상단 추가 본테이스트-->
+								<div class="brand-slogan born">
+									<ul class="animated ani-start-fadeUp ani-stop ani-delay-06">
+										<li>
+											<div>
+												<span class="info"><b>BORNTASTE,<br/> creating the source of flavor</b></span>
+												<span class="desc"><em>We create the source of flavor with natural ingredients grown with all our heart.</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>BORNTATE,<br/> setting the standard of taste</b></span>
+												<span class="desc"><em>Through advanced facilities and technology We create a standard of taste.</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>Trustworthy<br/> BORNTASTE</b></span>
+												<span class="desc"><em>We give trust to our customers through HACCP and ISO certification, thorough hygiene control, and systematic quality control.</em></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<!--200710 브랜드 리스트 상단 추가 베지가든-->
+								<div class="brand-slogan vgarden">
+									<ul class="animated ani-start-fadeUp ani-stop ani-delay-06">
+										<li>
+											<div>
+												<span class="info"><b>Delicious and easy<br/> Vegan food</b></span>
+												<span class="desc"><em>It&#39;s delicious and easy for everyone to eat at home.</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>Reliable food<br/> Vegan food</b></span>
+												<span class="desc"><em>Based on 100% vegetable Ingredients, we make rliable vegan foods through thorough raw material inspection and production management.</em></span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<span class="info"><b>Vegan food<br/> Solution</b></span>
+												<span class="desc"><em>We strive to popularize plant-based products through dining, menu consulting, and win-win cooperative strategies with small and medium enterprises.</em></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="view prd-list">
+									<ul class="inner animated ani-start-fadeIn ani-stop ani-delay-06">
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample01.png" alt="제품01">
+											</div>
+											<span class="prd_name">Pinkfong Baby Shark<br/> Soy Sauce Topokki</span>
+											<span class="prd_detail">
+												<strong>Pinkfong Baby Shark<br/> Soy Sauce Topokki</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample02.png" alt="제품02">
+											</div>
+											<span class="prd_name">Pinkfong Baby Shark<br/> Hot Topokki</span>
+											<span class="prd_detail">
+												<strong>Pinkfong Baby Shark<br/> Hot Topokki</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample03.png" alt="제품03">
+											</div>
+											<span class="prd_name">Pinkfong Baby Shark<br/>Jajang Topokki</span>
+											<span class="prd_detail">
+												<strong>Pinkfong Baby Shark<br/> Jajang Topokki</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample04.png" alt="제품04">
+											</div>
+											<span class="prd_name">GS Spicy Braised<br/> Chicken in Soy Sauce</span>
+											<span class="prd_detail">
+												<strong>GS Spicy Braised<br/> Chicken in Soy Sauce</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/detail_sample01.png" alt="제품05">
+											</div>
+											<span class="prd_name">O&rsquo;taste Pork Backbone<br/> Soup with Dried Cabbage</span>
+											<span class="prd_detail">
+												<strong>O&rsquo;taste Pork Backbone<br/> Soup with Dried Cabbage</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample06.png" alt="제품06">
+											</div>
+											<span class="prd_name">GS Stir-Fried Pork Belly and<br/> Sausage with Mala Sauce</span>
+											<span class="prd_detail">
+												<strong>GS Stir-Fried Pork Belly and<br/> Sausage with Mala Sauce</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample07.png" alt="제품07">
+											</div>
+											<span class="prd_name">GS Charcoal Roasted<br/> Pork Barbecue</span>
+											<span class="prd_detail">
+												<strong>GS Charcoal Roasted<br/> Pork Barbecue</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+										<li>
+											<div class="thum">
+												<img src="../images/sub/sample08.png" alt="제품08">
+											</div>
+											<span class="prd_name">GS Spicy Stewed Pork<br/> Ribs</span>
+											<span class="prd_detail">
+												<strong>GS Spicy Stewed Pork<br/> Ribs</strong>
+												<em></em>
+												<span class="btn--type-xs"><a href="\">Detail</a></span>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="paging">
+								<span><a href="#" class="first"><em class="hidden_txt">first</em></a></span>
+								<span><a href="#" class="prev"><em class="hidden_txt">previous</em></a></span>
+								<ul>
+									<li class="selected"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+									<li><a href="#">7</a></li>
+									<li><a href="#">8</a></li>
+									<li><a href="#">9</a></li>
+									<li><a href="#">10</a></li>
+								</ul>
+								<span><a href="#" class="next"><em class="hidden_txt">next</em></a></span>
+								<span><a href="#" class="last"><em class="hidden_txt">last</em></a></span>
+							</div>
+							<div class="btnArea">
+								<button class="btn-Apply" type="submit">more</button>
+							</div>
+						</div>
+					</div>
+					<!-- // #contents E -->
+				</div>
+			</div><!-- // container E-->
+		</div><!-- // wrap E-->
+		<!-- // wrapper E -->
+
+		<!-- footer S -->
+		<footer>
+			<div class="wrap">
+				<div class="container">
+					<span class="logo">
+						<a href="index.html">
+							<em class="hidden_txt">로고 이미지</em>
+						</a>
+					</span>
+					<div class="contents inner">
+						<address>
+							<ul>
+								<li>Nongshim Doyeongwan, 13th floor, 112, Yeouidaebang-ro, Dongjak-gu, Seoul, Korea</li>
+								<li>TEL : 02 820 8700</li>
+								<li>FAX : 02 820 8796</li>
+							</ul>
+						</address>
+						<ul class="ft-sns-list">
+							<li><a href="\"><em class="hidden_txt">facebook</em><img src="../images/common/icon/ico_sns_facebook.png" alt="페이스북" /></a></li>
+							<li><a href="\"><em class="hidden_txt">instagram</em><img src="../images/common/icon/ico_sns_insta.png" alt="인스타그램" /></a></li>
+							<li><a href="\"><em class="hidden_txt">blog</em><img src="../images/common/icon/ico_sns_blog.png" alt="페이스북" /></a></li>
+						</ul>
+						<p class="copyright">COPYRIGHTS&copy; TAEKYUNGNONGSAN ALL RIGHT RESERVE</p>
+					</div>
+					<div class="familySite">
+						<span class="customSelect urlChange">
+							<label for="familysite"><em class="hidden_txt">계열사 바로가기</em></label>
+							<select id="familysite">
+								<option value="">FAMILY SITES</option>
+								<option value="http://www.nongshim.com/">Nongshim</option>
+								<option value="http://www.nongshim.com/introduction/list_holdings_notice">Nongshim Holdings</option>
+								<option value="http://www.megamart.com/jsp/Main.jsp">Mega Mart</option>
+								<option value="http://www.youlchon.com/">Youlchon Chemistry</option>
+								<option value="http://www.nongshimeng.com/">Nongshim Engineering</option>
+								<option value="http://nds.nongshim.co.kr/">NDS</option>
+								<option value="http://www.nscom.co.kr/">Nongshim Communication</option>
+								<option value="http://www.hotelnongshim.com/html/main/">Hotel Nongshim</option>
+								<option value="http://www.youlchon.org/">Youlchon Foundation</option>
+								<option value="http://www.ildonglakes.co.kr/">Nongshim Development Co.</option>
+							</select>
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- // footer E -->
+	</div>
+</body>
+</html>	
+  
